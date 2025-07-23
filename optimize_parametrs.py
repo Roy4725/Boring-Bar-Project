@@ -114,20 +114,12 @@ optimized_params = {
 print("Optimized Parameters:", optimized_params)
 
 # Save to CSV
-# pd.DataFrame([optimized_params]).to_csv("optimized_params.csv", index=False)
+pd.DataFrame([optimized_params]).to_csv("optimized_params.csv", index=False)
 
-# df_results = pd.DataFrame(results)
-# df_results.to_csv("all_max_disp_results.csv", index=False)
+df_results = pd.DataFrame(results)
+df_results.to_csv("all_max_disp_results.csv", index=False)
 
-# Plot displacement with mass 2
-plt.figure(figsize=(10, 6))
-plt.plot(t, x1, label="With Mass 2")
-plt.xlabel("Time (s)")
-plt.xlim(0, 10)
-plt.ylabel("Displacement (mm)")
-plt.legend()
-plt.grid()
-plt.show()
+
 
 
 
